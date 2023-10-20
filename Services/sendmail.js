@@ -11,7 +11,7 @@ const sendmail = (user, token) => {
     from: "ganeshnithya185@gmail.com",
     to: "ganeshnithya185@gmail.com",
     subject: "Reset your password",
-    text: `http://localhost:3000/reset-password/${user._id}/${token}`,
+    text: `https://hilarious-klepon-667ebd.netlify.app/reset-password/${user._id}/${token}`,
   };
   mailTransporter.sendMail(details, (err) => {
     if (err) {
